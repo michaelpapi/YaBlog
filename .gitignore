@@ -1,4 +1,6 @@
 ll_env/
 __pycache__/
 *.sqlite3
-my_env
+my_env/
+.env
+EP.2.v0.360p.mp4
