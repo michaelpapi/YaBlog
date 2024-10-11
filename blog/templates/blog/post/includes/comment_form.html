@@ -1,0 +1,11 @@
+{% load crispy_forms_tags %}
+
+<h2>Add a new comment</h2>
+<form action="{% url 'blog:post_comment' post.id %}" method="post">
+  {% csrf_token %}
+  {{ form|crispy }} <!-- Use crispy for Bootstrap 5 styling -->
+
+  <div class="mt-3">
+    <button type="submit" class="btn btn-primary">Add comment</button> <!-- Bootstrap styled button -->
+  </div>
+</form>
